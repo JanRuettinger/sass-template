@@ -1,0 +1,53 @@
+@import 'grid_variables';
+@import 'grid_mixins';
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+    @include make-container();
+    @include make-container-max-widths();
+}
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+    @include make-container();
+}
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+    @include make-row();
+}
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns();
+
+
+
+// Responsive visibility utilities
+
+@each $bp in map-keys($grid-breakpoints) {
+  .hidden-#{$bp}-up {
+    @include media-breakpoint-up($bp) {
+      display: none !important;
+    }
+  }
+  .hidden-#{$bp}-down {
+    @include media-breakpoint-down($bp) {
+      display: none !important;
+    }
+  }
+}
+
+

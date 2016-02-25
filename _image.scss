@@ -1,0 +1,158 @@
+// Credit: Nicolas Gallagher and SUIT CSS.
+
+@mixin embed-responsive() {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+  }
+}
+
+.embed-responsive {
+  @include embed-responsive;
+
+  .embed-responsive-item,
+  iframe,
+  embed,
+  object,
+  video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+
+@mixin embed-responsive-content {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.embed-responsive-content {
+  @include embed-responsive-content;
+}
+
+@mixin embed-responsive-21by9 {
+  &:before {
+  padding-bottom: percentage(9 / 21);
+  }
+}
+
+.embed-responsive-21by9{
+  @include embed-responsive-21by9;
+}
+
+
+@mixin embed-responsive-16by9 {
+  &:before {
+  padding-bottom: percentage(9 / 16);
+  }
+}
+
+.embed-responsive-16by9{
+  @include embed-responsive-16by9;
+}
+
+
+@mixin embed-responsive-4by3 {
+  &:before {
+  padding-bottom: percentage(3 / 4);
+  }
+}
+
+.embed-responsive-4by3{
+  @include embed-responsive-4by3;
+}
+
+
+@mixin embed-responsive-2by1 {
+  &:before {
+  padding-bottom: percentage(1 / 2);
+  }
+}
+
+.embed-responsive-2by1{
+  @include embed-responsive-2by1;
+}
+
+
+@mixin embed-responsive-3by2 {
+  &:before {
+  padding-bottom: percentage(2 / 3);
+  }
+}
+
+.embed-responsive-3by2{
+  @include embed-responsive-3by2;
+}
+
+
+@mixin embed-responsive-1by1 {
+  &:before {
+  padding-bottom: percentage(1 / 1);
+  }
+}
+
+.embed-responsive-1by1{
+  @include embed-responsive-1by1;
+}
+
+
+// Responsive image
+// Keep images from scaling beyond the width of their parents.
+@mixin img-fluid($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+  align: middle;
+  margin: auto;
+}
+
+.img-fluid {
+  @include img-fluid;
+}
+
+@mixin img-cover {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto 1em;
+  clear: both;
+}
+
+.img-cover {
+  @include img-cover;
+}
+
+
+/*
+* Usage:
+*
+* <div class="(img-cover embed-responsive embed-responsive-16by9"
+*      style="background-image:url(cover.jpg)">
+* </div>
+*
+* .car-picture {
+*  @include img-cover;
+*  @include embed-responsive;
+*  @include embed-responsive-16by9;
+*  max-height: 300px;
+* }
+*
+*/
+
+
+

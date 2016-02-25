@@ -1,0 +1,182 @@
+html,body {
+  font-family: 'Titillium Web', sans-serif;
+  color: #333333;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
+
+
+@include media-breakpoint-up(xs) {
+    body {
+      font-size: 15px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 28px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 1.15;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 18px;
+      line-height: 1.14;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 1.11;
+      font-weight: 500;
+    }
+    blockquote{
+      font-size: 16px;
+      line-height: 1.25;
+      font-weight: 500;
+    }
+}
+
+
+@include media-breakpoint-up(sm) {
+    body {
+      font-size: 18px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 26px;
+      line-height: 1.15em;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 1.14em;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 1.11em;
+      font-weight: 500;
+    }
+    blockquote{
+      font-size: 20px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+}
+
+
+@include media-breakpoint-up(md) {
+    body {
+      font-size: 18px;
+      line-height: 1.375em;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 32px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 26px;
+      line-height: 1.15em;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 22px;
+      line-height: 1.14em;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 1.11em;
+      font-weight: 500;
+    }
+    blockquote{
+      font-size: 20px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+      font-size: 21px;
+      line-height: 1.375em;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 40px;
+      line-height: 1.05em;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 24px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 1.22em;
+      font-weight: 500;
+    }
+    blockquote{
+      font-size: 24px;
+      line-height: 1.5em;
+      font-weight: 500;
+    }
+}
+
+
+@include media-breakpoint-up(xl) {
+    body {
+      font-size: 21px;
+      line-height: 1.375em;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 48px;
+      line-height: 1.05em;
+      font-weight: 500;
+    }
+    h2 {
+      font-size: 36px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 28px;
+      line-height: 1.25em;
+      font-weight: 500;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 1.22em;
+      font-weight: 500;
+    }
+    blockquote{
+      font-size: 24px;
+      line-height: 1.5em;
+      font-weight: 500;
+    }
+}
+
+
+
+
+
